@@ -11,9 +11,8 @@ import { label } from '../core/models';
   template: `
     <div class="app-shell">
       <aside class="sidebar" [class.sidebar-open]="menuOpen()">
-        <a class="brand" routerLink="/dashboard" (click)="closeMenu()" aria-label="Accueil Alias Support">
-          <span class="brand-mark">AI</span>
-          <span><strong>Alias Support</strong><small>Suivi des demandes</small></span>
+        <a class="brand" routerLink="/dashboard" (click)="closeMenu()" aria-label="Accueil Alias Informatique">
+          <img class="sidebar-logo" src="/images/alias-informatique-logo.png" alt="Alias Informatique">
         </a>
         <nav aria-label="Navigation principale">
           <a routerLink="/dashboard" routerLinkActive="active" (click)="closeMenu()"><span aria-hidden="true">▦</span> Tableau de bord</a>

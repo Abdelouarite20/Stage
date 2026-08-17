@@ -12,7 +12,9 @@ import { AuthService } from '../core/auth.service';
   template: `
     <main class="login-page">
       <section class="login-intro">
-        <div class="login-brand"><span class="brand-mark">AI</span> Alias Informatique</div>
+        <div class="login-brand">
+          <img class="login-logo" src="/images/alias-informatique-logo.png" alt="Alias Informatique">
+        </div>
         <div>
           <p class="eyebrow">ESPACE SUPPORT</p>
           <h1>Centraliser. Prioriser.<br>Résoudre.</h1>
@@ -22,6 +24,7 @@ import { AuthService } from '../core/auth.service';
       </section>
       <section class="login-panel">
         <form class="login-card" [formGroup]="form" (ngSubmit)="submit()">
+          <img class="login-panel-logo" src="/images/alias-informatique-logo.png" alt="Alias Informatique">
           <div>
             <p class="eyebrow">BIENVENUE</p>
             <h2>Connexion</h2>
